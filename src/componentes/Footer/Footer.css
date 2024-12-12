@@ -1,0 +1,89 @@
+/* Estilos gerais do rodapé */
+.footer {
+  background-color: #f98408;
+  color: #FFF8E7;
+  text-align: center;
+  padding: 20px 0; /* Padding ajustado */
+  font-family: Arial, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1000;
+  margin-top: 30px; /* Espaço entre o conteúdo e o rodapé */
+}
+
+/* Container principal do rodapé */
+.footer .container {
+  display: flex;
+  justify-content: center; /* Centraliza as seções */
+  align-items: flex-start; /* Alinha as seções no topo */
+  max-width: 1200px; /* Limita a largura do conteúdo */
+  margin: 0 auto;
+  padding: 10px;
+  flex-wrap: wrap; /* Garante que as seções se adaptem em telas menores */
+}
+
+/* Seções do rodapé */
+.footer .section {
+  flex: 1; /* As seções ocupam o mesmo espaço */
+  min-width: 250px; /* Garante que as seções não fiquem muito estreitas */
+  margin: 10px; /* Espaço entre as seções */
+  padding: 5px;
+  display: flex;
+  flex-direction: column; /* As informações dentro das seções ficam empilhadas verticalmente */
+  justify-content: flex-start; /* Alinha as informações no topo da seção */
+}
+
+/* Títulos das seções */
+.footer .section h3 {
+  color: black;
+  font-size: 16px;
+  margin-bottom: 8px; /* Espaço entre o título e o conteúdo */
+}
+
+/* Texto das seções */
+.footer .text,
+.footer .description {
+  font-size: 12px;
+  line-height: 1.4;
+  margin-bottom: 8px; /* Espaço entre os parágrafos */
+  text-align: left; /* Alinha o texto à esquerda dentro de cada seção */
+}
+
+/* Redes sociais */
+.footer .social {
+  margin-top: 15px;
+}
+
+.footer .social a {
+  color: black;
+  text-decoration: none;
+  margin: 0 10px; /* Aumentado o espaçamento entre os links */
+}
+
+.footer .social a:hover {
+  text-decoration: underline;
+}
+
+/* Direitos autorais */
+.footer .copyright {
+  margin-top: 10px;
+  font-size: 10px;
+  color: #FFF8E7;
+  text-align: center;
+}
+
+/* Ajustes no body e html para o sticky footer */
+html,
+body {
+  height: 100%; /* Garante que a altura do site ocupe toda a tela */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Define layout em coluna */
+}
+
+main {
+  flex: 1; /* O conteúdo principal ocupa o espaço restante */
+  padding-bottom: 100px;
+}
